@@ -1,0 +1,43 @@
+.modelo__horizontal {
+    display: flex;
+}
+
+.modelo__vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.modelo__horizontal, 
+.modelo__vertical {
+    gap: 1.8rem;
+}
+
+.modelo__centralizado {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modelo__quebra {
+    flex-wrap: wrap;
+}
+
+/* Cores de fundo */
+.fundo-adicionar {
+    background: var(--cor-adicionar);
+}
+
+.fundo-sortear {
+    background: var(--cor-sortear);
+}
+
+.fundo-reiniciar {
+    background: var(--cor-reiniciar);
+}
+
+.fundo-alerta {
+    background: var(--cor-alerta);
+}
+.fundo-sucesso {
+    background: var(--cor-sucesso);
+}

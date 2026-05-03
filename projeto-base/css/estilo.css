@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@import url('modelo.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #132440;
+    --cor-fonte: #FFFFFF;
+
+    --cor-adicionar: #2845D6;
+    --cor-destaque: #59B4C3;
+    --cor-sortear: #FF6500;
+    --cor-reiniciar: #526D82;
+    --cor-sucesso: #2F6B3F;
+    --cor-alerta: #CE2626;
+
+    --fonte-principal: 'JetBrains Mono', monospace;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-principal);
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteudo {
+    padding: 2rem;
+}
+
+.conteudo__secao {
+    gap: 2.5rem;
+    flex: 1 1 50%;
+}
+
+.conteudo__titulo {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.conteudo__subtitulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.conteudo__texto {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.conteudo__destaque {
+    color: var(--cor-destaque);
+    font-weight: bold;
+}
+
+.conteudo__tag {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.conteudo__caixa-texto {
+    background: var(--cor-fundo);
+    border: 0.2rem solid var(--cor-fonte);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--cor-fonte);
+    outline: none;
+    width: 100%;
+}
+
+.conteudo__caixa-texto::placeholder {
+    color: var(--cor-fonte);
+}
+
+.conteudo__botao {
+    color: var(--cor-fonte);
+    font-size: 1.5rem;
+    padding: 0.7rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+}
+
+.conteudo__botao:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.conteudo__mensagem {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.conteudo__mensagem-alerta {
+    animation-name: AnimarMensagemPelaLateral;
+    animation-duration: 1s;
+}
+
+.conteudo__caixa {
+    border: 0.2rem solid var(--cor-fonte);
+    border-radius: 0.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.conteudo__imagem {
+    border: 0.3rem solid var(--cor-adicionar);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.conteudo__opacidade {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+@keyframes AnimarMensagemPelaLateral {
+    to {
+        width: 350px;
+    }   
+
+    from {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .conteudo {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .conteudo__secao:nth-child(1) {
+        border-bottom: 0.3rem solid var(--cor-fonte);
+        padding: 2rem;
+    }
+}
