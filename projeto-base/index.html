@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Base | Desafios de Lógica com JavaScript</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/9mYN7ZtK/logo-projeto-base.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <main class="conteudo modelo__horizontal modelo__centralizado">
+        <section class="conteudo__secao modelo__vertical modelo__centralizado">
+            <h1 class="conteudo__titulo">Projeto Base</h1>
+
+            <div class="modelo__vertical modelo__centralizado">
+                <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade" class="conteudo__caixa-texto"/>
+
+                <select id="opcao-escolhida" name="opcao-escolhida" class="conteudo__caixa-texto">
+                    <option value="1">Opção 1</option>
+                    <option value="2">Opção 2</option>
+                </select>
+            </div>
+
+            <div class="modelo__horizontal modelo__centralizado modelo__quebra">
+                <button onclick="adicionar()" id="botao-adicionar" class="conteudo__botao fundo-adicionar">
+                    Adicionar
+                </button>
+                <button id="botao-sortear" class="conteudo__botao fundo-sortear" disabled>
+                    Sortear
+                </button>
+                <button onclick="reiniciar()" id="botao-reiniciar" class="conteudo__botao fundo-reiniciar" disabled>
+                    Reiniciar
+                </button>
+            </div>
+
+            <div class="modelo__vertical modelo__centralizado" id="elemento-mensagem-aviso"></div>
+        </section>
+
+        <section class="conteudo__secao modelo__vertical modelo__centralizado">
+            <h2 class="conteudo__subtitulo">Projeto Base 2.1</h2>
+            <p class="conteudo__texto">
+                Isso é um texto <span class="conteudo__destaque">destaque</span> +
+                <span class="conteudo__tag fundo-sucesso">tag</span>
+            </p>
+
+            <div class="modelo__vertical modelo__centralizado">
+                <img src="https://i.ibb.co/9mYN7ZtK/logo-projeto-base.png" alt="Logo - Projeto Base" class="conteudo__imagem conteudo__opacidade"/>
+            </div>
+
+            <div class="modelo__horizontal modelo__centralizado modelo__quebra">
+                <div class="conteudo__caixa conteudo__subtitulo fundo-reiniciar">01</div>
+                <div class="conteudo__caixa conteudo__subtitulo fundo-sucesso">02</div>
+                <div class="conteudo__caixa conteudo__subtitulo fundo-alerta">03</div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/script.js" defer></script>
+</body>
+</html>
