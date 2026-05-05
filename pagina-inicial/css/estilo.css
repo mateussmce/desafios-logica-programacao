@@ -1,0 +1,34 @@
+.conteudo {
+    padding: 5rem;
+}
+
+.fundo-amarelo {
+    background-color: #FFDE42;
+    color: var(--cor-fundo);
+    font-weight: bold;
+}
+
+.projetos {
+    padding-top: 2rem;
+}
+
+.projeto {
+    border: 0.3rem solid var(--cor-fonte);
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    flex: 1 1 25%;
+}
+
+.projeto .conteudo__subtitulo {
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 467px) {
+    .conteudo {
+        padding: 2rem;
+    }
+
+    .conteudo__titulo {
+        font-size: 2.5rem;
+    }
+}
