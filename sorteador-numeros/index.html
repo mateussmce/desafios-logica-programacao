@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Sorteador de Números | Desafios de Lógica com JavaScript</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/ZR5xC6Jr/logo-sorteador-numeros.png" type="image/x-icon">
+    <link rel="stylesheet" href="../projeto-base/css/estilo.css">
+</head>
+<body>
+    <main class="conteudo modelo__horizontal modelo__centralizado">
+        <section class="conteudo__secao modelo__vertical modelo__centralizado">
+            <h1 class="conteudo__titulo">Sorteador de Números</h1>
+
+            <div class="modelo__vertical modelo__centralizado">
+                <select id="opcao-escolhida" name="opcao-escolhida" class="conteudo__caixa-texto">
+                    <option value="1">Comum</option>
+                    <option value="2">Pares</option>
+                    <option value="3">Ímpares</option>
+                </select>
+                    
+                <input type="number" id="numero-minimo" name="numero-minimo" placeholder="Digite o número mínimo" class="conteudo__caixa-texto">
+
+                <input type="number" id="numero-maximo" name="numero-maximo" placeholder="Digite o número máximo" class="conteudo__caixa-texto">
+
+                <input type="number" id="numero-quantidade" name="numero-quantidade" placeholder="Digite a quantidade" class="conteudo__caixa-texto">
+            </div>
+
+            <div class="modelo__horizontal modelo__centralizado modelo__quebra">
+                <button onclick="sortear()" id="botao-sortear" class="conteudo__botao fundo-adicionar">
+                    Sortear
+                </button>
+
+                <button onclick="reiniciar()" id="botao-reiniciar" class="conteudo__botao fundo-reiniciar" disabled>
+                    Reiniciar
+                </button>
+            </div>
+
+            <div class="modelo__vertical modelo__centralizado" id="elemento-mensagem-aviso"></div>
+        </section>
+
+        <section class="conteudo__secao modelo__vertical modelo__centralizado">
+            <h2 class="conteudo__subtitulo">Números sorteáveis</h2>
+            
+            <div class="modelo__horizontal modelo__centralizado modelo__quebra" id="elemento-numeros-sorteados"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
