@@ -1,0 +1,15 @@
+.jogo {
+    flex: 1 1 30%;
+}
+
+.jogo .conteudo__texto {
+    font-weight: bold;
+}
+
+.jogo .conteudo__imagem {
+    width: auto;
+}
+
+.jogo .conteudo__botao {
+    width: 100%;
+}
