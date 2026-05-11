@@ -1,0 +1,16 @@
+.produto {
+    border: 0.2rem solid var(--cor-fonte);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    gap: 1.4rem;
+}
+
+.produtos .conteudo__texto {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 771px) {
+    .produtos {
+        flex-wrap: wrap;
+    }
+}
