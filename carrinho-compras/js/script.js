@@ -2,8 +2,11 @@ const elementoMensagemAviso = document.querySelector('#elemento-mensagem-aviso')
 const elementoProdutos = document.querySelector('#elemento-produtos');
 const elementoOpcaoProdutos = document.querySelector('#produtos');
 const elementoPreco = document.querySelector('#elemento-preco');
+const elementoProdutoAdicionado = document.querySelector('#elemento-produto-adicionado');
 
 let precoGeral = 0;
+
+const listaProdutosAdicionados = [];
 
 const listaProdutos = [
     { id: 1, nome: 'Celular', quantidade: 6, preco: 1400 },
@@ -24,7 +27,29 @@ function adicionar() {
     if (!validarCampos(quantidade, opcaoEscolhida)) return;
 
     inserirProdutoNoCarrinho(quantidade, nomeProduto, precoProduto, codigoProduto);
+    mostrarProdutoAdicionadoNaTela(nomeProduto, precoProduto, quantidade);
     limparCampos();
+}
+
+function mostrarProdutoAdicionadoNaTela(nomeProduto, precoProduto, quantidadeProduto) {
+    listaProdutosAdicionados.push({
+        nome: nomeProduto, 
+        preco: precoProduto, 
+        quantidade: quantidadeProduto 
+    });
+
+    elementoProdutoAdicionado.innerHTML = '';
+
+    listaProdutosAdicionados.forEach((produto) => {
+        elementoProdutoAdicionado.innerHTML += `
+            <tr>
+                <td>#</td>
+                <td>${produto.nome}</td>
+                <td>${produto.quantidade}</td>
+                <td>${produto.preco}</td>
+            </tr>
+        `;
+    });
 }
 
 function inserirProdutoNoCarrinho(quantidade, nomeProduto, precoProduto, codigoProduto) {
