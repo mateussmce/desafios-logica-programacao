@@ -9,6 +9,18 @@
     font-weight: bold;
 }
 
+.produto__tabela th, td {
+    border: 0.3px solid var(--cor-fonte);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 2.5rem;
+    width: 100%;
+}
+
+.produto__tabela thead {
+    background: var(--cor-adicionar);
+}
+
 @media screen and (max-width: 771px) {
     .produtos {
         flex-wrap: wrap;
