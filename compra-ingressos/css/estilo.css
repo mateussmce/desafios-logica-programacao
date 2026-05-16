@@ -1,0 +1,15 @@
+.conteudo__informacao .conteudo__barra {
+    border: 0.1rem solid var(--cor-fonte);
+    width: 100%;
+}
+
+.fundo-reiniciar {
+    background: #2E2E2E;
+}
+
+.conteudo__bloco {
+    border: 0.15rem solid var(--cor-fonte);
+    border-radius: 0.5rem;
+    padding: 1rem 1.3rem;
+    font-size: 1.3rem;
+}
