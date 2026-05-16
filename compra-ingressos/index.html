@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Ingressos | Desafios de Lógica com JavaScript</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/KjH471B8/logo-compra-ingressos-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="../projeto-base/css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <main class="conteudo modelo__horizontal modelo__centralizado">
+        <section class="conteudo__secao modelo__vertical modelo__centralizado">
+            <div class="modelo__vertical modelo__centralizado" id="elemento-mensagem-aviso"></div>
+
+            <h1 class="conteudo__titulo">Compra de Ingressos</h1>
+
+            <div class="modelo__vertical modelo__centralizado">
+                <input type="text" id="nome-usuario" name="nome-usuario" placeholder="Digite o nome do usuário" class="conteudo__caixa-texto"/>
+            </div>
+
+            <div class="modelo__vertical modelo__centralizado modelo__quebra">
+                <button onclick="adicionar()" id="botao-adicionar" class="conteudo__botao fundo-adicionar">
+                    Adicionar
+                </button>
+            </div>
+
+            <div class="conteudo__informacao modelo__vertical modelo__centralizado" id="elemento-informacoes"></div>
+        </section>
+
+        <section class="conteudo__secao modelo__vertical modelo__centralizado">
+            <h2 class="conteudo__subtitulo">Reserve já</h2>
+            <p class="conteudo__texto">
+                Preço da compra: R$ <span class="conteudo__destaque" id="elemento-preco-compra">0</span>
+            </p>
+
+            <div class="modelo__horizontal modelo__centralizado modelo__quebra" id="elemento-assentos-disponiveis">
+                
+            </div>
+
+            <p class="conteudo__texto">
+                Preço do ingresso: R$ <span class="conteudo__destaque" id="elemento-preco-ingresso">25</span>
+            </p>
+        </section>
+    </main>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
