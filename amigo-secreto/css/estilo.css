@@ -1,0 +1,5 @@
+.conteudo__amigo-secreto .conteudo__texto {
+    border: 0.2rem solid var(--cor-fonte);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
