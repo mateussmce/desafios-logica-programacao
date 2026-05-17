@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto | Desafios de Lógica com JavaScript</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/Xm27vQ5/logo-amigo-secreto-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="../projeto-base/css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <main class="conteudo modelo__horizontal modelo__centralizado">
+        <section class="conteudo__secao modelo__vertical modelo__centralizado">
+            <h1 class="conteudo__titulo">Amigo Secreto</h1>
+
+            <div class="modelo__vertical modelo__centralizado">
+                <input type="text" name="nome-amigo" id="nome-amigo" placeholder="Digite o nome do amigo" class="conteudo__caixa-texto"/>
+            </div>
+
+            <div class="modelo__horizontal modelo__centralizado modelo__quebra">
+                <button onclick="adicionar()" id="botao-adicionar" class="conteudo__botao fundo-adicionar">
+                    Adicionar
+                </button>
+
+                <button onclick="sortear()" id="botao-sortear" class="conteudo__botao fundo-sortear" disabled>
+                    Sortear
+                </button>
+
+                <button onclick="reiniciar()" id="botao-reiniciar" class="conteudo__botao fundo-reiniciar" disabled>
+                    Reiniciar
+                </button>
+            </div>
+
+            <div class="modelo__vertical modelo__centralizado" id="elemento-mensagem-aviso"></div>
+        </section>
+
+        <section class="conteudo__secao modelo__vertical modelo__centralizado">
+            <div class="conteudo__amigo-secreto modelo__vertical modelo__centralizado">
+                <div class="modelo__vertical modelo__centralizado">
+                    <h2 class="conteudo__subtitulo">Amigos adicionados</h2>
+
+                    <p class="conteudo__texto conteudo__destaque" id="elemento-amigo-adicionado">
+                        Nenhum amigo adicionado até o momento.
+                    </p>
+                </div>
+
+                <div class="modelo__vertical modelo__centralizado">
+                    <h2 class="conteudo__subtitulo">Amigos sorteados</h2>
+
+                    <p class="conteudo__texto conteudo__destaque" id="elemento-amigo-sorteado">
+                        Nenhum amigo adicionado até o momento.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
